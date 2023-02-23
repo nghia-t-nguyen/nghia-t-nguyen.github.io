@@ -77,9 +77,6 @@ if (percentSeparator4 < 0) {
 }
 
 
-
-
-
 function showPopup(id) {
     $("#popup1").addClass("hidden");
     $("#popup2").addClass("hidden");

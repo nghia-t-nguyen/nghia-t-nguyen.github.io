@@ -85,7 +85,7 @@
     }
 
     .listContainer>ul>li:hover {
-        box-shadow: 4px 4px 0 1px #0e0f0f;
+        box-shadow: -4px -4px 0 1px #0e0f0f;
     }
 
     p>a {
@@ -244,10 +244,10 @@
         width: 80%;
         height: 80%;
         top: 10%;
-        right: 10%;
+        right: 8%;
         padding: 15px;
         outline: 1.5px solid #0e0f0f;
-        box-shadow: 8px 8px 0 1px #0e0f0f;
+        box-shadow: -16px -16px 0 1px #0e0f0f;
         display: grid;
         grid:
             "popupHeader" auto "popupMain" 1fr;
@@ -398,7 +398,7 @@
     }
 
     .listContainer>ul>li:hover {
-        box-shadow: 4px 4px 0 1px #0e0f0f;
+        box-shadow: -4px -4px 0 1px #0e0f0f;
     }
 
     p>a {
@@ -533,10 +533,10 @@
         width: 80%;
         height: 80%;
         top: 10%;
-        right: 10%;
+        right: 8%;
         padding: 15px;
         outline: 1.5px solid #0e0f0f;
-        box-shadow: 8px 8px 0 1px #0e0f0f;
+        box-shadow: -16px -16px 0 1px #0e0f0f;
         display: grid;
         grid:
             "popupHeader" auto "popupMain" 1fr;
