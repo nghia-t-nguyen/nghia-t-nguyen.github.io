@@ -1,7 +1,7 @@
 $("#popupContainer").toggle(false);
 
 var img = document.createElement("img");
-img.src = "images/johnny-sequence-3/_00000.png";
+img.src = "images/_00000.png";
 img.style.position = "absolute";
 img.style.margin = "auto";
 img.style.top = "0";
@@ -19,20 +19,20 @@ function zeroPadder(num, size) {
 
 const img_sequence = [];
 for (let i = 0; i < 170; ++i) {
-    img_sequence.push(`images/johnny-sequence-3/_${zeroPadder(i, 5)}.png`)
+    img_sequence.push(`images/_${zeroPadder(i, 5)}.png`)
 }
 
 
 let i = 0;
-if (window.scrollY === 0) {
-    const initialAnimation = setInterval(function () {
-        img.src = img_sequence[i];
-        ++i;
-        if (i > 36) {
-            clearInterval(initialAnimation);
-        }
-    }, 50);
-}
+
+const initialAnimation = setInterval(function () {
+    img.src = img_sequence[i];
+    ++i;
+    if (i > 36 || window.scrollY !== 0) {
+        clearInterval(initialAnimation);
+    }
+}, 50);
+
 
 let scrollTop = $(window).scrollTop();
 
