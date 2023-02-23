@@ -20,6 +20,8 @@ function zeroPadder(num, size) {
 const img_sequence = [];
 for (let i = 0; i < 170; ++i) {
     img_sequence.push(`images/_${zeroPadder(i, 5)}.png`)
+    load_img = new Image();
+    load_img.src = img_sequence[i];
 }
 
 
