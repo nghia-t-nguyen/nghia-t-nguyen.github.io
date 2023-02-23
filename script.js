@@ -25,13 +25,15 @@ for (let i = 0; i < 170; ++i) {
 
 let i = 0;
 
-const initialAnimation = setInterval(function () {
-    img.src = img_sequence[i];
-    ++i;
-    if (i > 36 || window.scrollY !== 0) {
-        clearInterval(initialAnimation);
-    }
-}, 50);
+if (window.scrollY === 0) {
+    const initialAnimation = setInterval(function () {
+        img.src = img_sequence[i];
+        ++i;
+        if (i > 36 || window.scrollY !== 0) {
+            clearInterval(initialAnimation);
+        }
+    }, 50);
+}
 
 
 let scrollTop = $(window).scrollTop();
@@ -61,6 +63,8 @@ if (window.scrollY === 0) {
     let frame = 117 + 53 * percentSeparator3 | 0;
     img.src = img_sequence[frame];
 } else if (percentSeparator4 < 0) {
+    img.src = img_sequence[169];
+} else {
     img.src = img_sequence[169];
 }
 
