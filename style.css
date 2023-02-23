@@ -71,7 +71,7 @@
         margin: 7.5px 0;
         width: 100%;
         padding: 15px;
-        font-size: 14px;
+        font-size: 16px;
         font-family: Montserrat;
         font-weight: 600;
         text-align: left;
@@ -168,6 +168,10 @@
 
     .separator {
         height: 400px;
+    }
+
+    #separator5 {
+        height: 200px;
     }
 
     h1 {
@@ -298,6 +302,13 @@
         overflow-x: hidden;
     }
 
+    .images {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     ::-webkit-scrollbar {
         width: 10px;
     }
@@ -334,7 +345,7 @@
     #menuButton {
         padding: 15px;
         width: 100%;
-        font-size: 14px;
+        font-size: 18px;
         font-family: Montserrat;
         font-weight: 600;
         text-align: left;
@@ -373,7 +384,7 @@
         margin: 7.5px 0;
         width: 100%;
         padding: 15px;
-        font-size: 14px;
+        font-size: 16px;
         font-family: Montserrat;
         font-weight: 600;
         text-align: left;
@@ -403,7 +414,7 @@
 
     .navlink {
         padding: 15px;
-        font-size: 14px;
+        font-size: 18px;
         font-family: Montserrat;
         font-weight: 600;
         text-align: left;
