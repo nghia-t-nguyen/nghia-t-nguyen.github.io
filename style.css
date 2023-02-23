@@ -533,10 +533,10 @@
         width: 80%;
         height: 80%;
         top: 10%;
-        right: 8%;
+        right: 6%;
         padding: 15px;
         outline: 1.5px solid #0e0f0f;
-        box-shadow: -16px -16px 0 1px #0e0f0f;
+        box-shadow: -10px -10px 0 1px #0e0f0f;
         display: grid;
         grid:
             "popupHeader" auto "popupMain" 1fr;
