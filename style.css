@@ -1,16 +1,35 @@
-@media (min-width:1000px){
-    html{
+@media (min-width:1000px) {
+    html {
         scroll-behavior: smooth;
     }
-    body{
+
+    body {
         display: block;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         font-family: Arial;
         background-color: #f4f0e8;
     }
-    nav{
-        width:100%;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        outline: 1.5px solid #0e0f0f;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0e0f0f;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #475454;
+    }
+
+    nav {
+        width: 100%;
         background-color: #f4f0e8;
         border-bottom: 1.5px solid #0e0f0f;
         overflow: hidden;
@@ -18,32 +37,39 @@
         z-index: 20;
         top: 0;
     }
-    ul{
+
+    ul {
         padding: 0;
         margin: 0;
         list-style: none;
         float: right;
     }
-    #menuButton{
-        display:none;
+
+    #menuButton {
+        display: none;
     }
+
     #navigationBar.visible {
         display: block;
     }
-    li{
+
+    li {
         float: left;
         background-color: #f4f0e8;
     }
+
     .listContainer {
         width: calc(100% - 30px);
     }
-    .listContainer > ul{
+
+    .listContainer>ul {
         width: 100%;
     }
-    .listContainer > ul > li {
+
+    .listContainer>ul>li {
         float: left;
         margin: 7.5px 0;
-        width:100%;
+        width: 100%;
         padding: 15px;
         font-size: 14px;
         font-family: Montserrat;
@@ -57,20 +83,23 @@
         outline: 1.5px solid #0e0f0f;
         transition: all 0.2s ease-in-out;
     }
-    .listContainer > ul > li:hover {
+
+    .listContainer>ul>li:hover {
         box-shadow: 4px 4px 0 1px #0e0f0f;
     }
 
-    p > a{
+    p>a {
         background: #a4cfd9;
-        color:#0e0f0f;
+        color: #0e0f0f;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
     }
-    p > a:hover {
+
+    p>a:hover {
         background: #85a2aa;
     }
-    .navlink{
+
+    .navlink {
         padding: 15px;
         width: 120px;
         font-size: 14px;
@@ -84,21 +113,25 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
+
     .navlink.highlighted {
         background-color: #a4cfd9;
     }
+
     .navlink:hover {
         background-color: #a4cfd9;
     }
-    #column1{
+
+    #column1 {
         display: block;
         position: relative;
         background-color: #f4f0e8;
-        width:600px;
-        float:left;
+        width: 600px;
+        float: left;
         z-index: 15;
     }
-    #column2{
+
+    #column2 {
         width: calc(100% - 600px);
         float: right;
         top: 48px;
@@ -106,30 +139,38 @@
         height: calc(100vh - 48px);
         position: fixed;
     }
+
     .section {
         width: 100%;
         border-right: 1.5px solid #0e0f0f;
     }
-    #section0{
+
+    #section0 {
         display: inline-block;
     }
-    #section1{
+
+    #section1 {
         display: inline-block;
     }
-    #section2{
+
+    #section2 {
         display: inline-block;
     }
-    #section3{
+
+    #section3 {
         display: inline-block;
     }
-    .sectionHeader{
+
+    .sectionHeader {
         margin-top: 70px;
         border-bottom: 1.5px solid #0e0f0f;
     }
+
     .separator {
-        height:400px;
+        height: 400px;
     }
-    h1{
+
+    h1 {
         text-indent: 40px;
         font-family: Montserrat;
         font-weight: 600;
@@ -137,7 +178,8 @@
         text-align: left;
         padding: 0;
     }
-    h2{
+
+    h2 {
         font-family: Montserrat;
         font-weight: 600;
         color: #000;
@@ -146,13 +188,15 @@
         margin-top: 0px;
         margin-bottom: 15px;
     }
-    .maintext{
+
+    .maintext {
         margin-left: 30px;
         padding: 15px 30px;
         border-left: 1.5px solid #0e0f0f;
         border-bottom: 1.5px solid #0e0f0f;
     }
-    p{
+
+    p {
         font-family: Montserrat;
         font-weight: 500;
         font-size: 18px;
@@ -162,10 +206,12 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    mark{
+
+    mark {
         background: #ffd580;
     }
-    .smallText{
+
+    .smallText {
         font-family: Montserrat;
         font-weight: 500;
         font-size: 16px;
@@ -174,9 +220,11 @@
         padding-left: 15px;
         border-left: 1.5px solid #0e0f0f;
     }
-    .smallText > mark {
+
+    .smallText>mark {
         background: #f9c6cb;
     }
+
     #popupContainer {
         width: calc(100% - 600px);
         height: calc(100% - 30px);
@@ -185,6 +233,7 @@
         left: 600px;
         z-index: 40;
     }
+
     .popup {
         background-color: #ffd580;
         position: absolute;
@@ -197,22 +246,38 @@
         box-shadow: 8px 8px 0 1px #0e0f0f;
         display: grid;
         grid:
-            "popupHeader" auto
-            "popupMain" 1fr;
+            "popupHeader" auto "popupMain" 1fr;
         z-index: 40;
         transition: all 0.7s ease-in-out;
     }
+
     .popup.hidden {
         z-index: 0;
         box-shadow: none;
     }
+
     .popupHeader {
         display: flex;
         justify-content: space-between;
     }
+
+    .popupMain {
+        overflow-y: auto;
+    }
+
+    .popupMain>p {
+        margin-right: 15px;
+    }
+
+    .popupMain>img {
+        width: 60%;
+        margin-left: calc(20% - 15px);
+    }
+
     .exitIcon {
         margin-left: 20px;
     }
+
     .exitIcon:hover {
         filter: invert(100%);
         background-color: #fff;
@@ -220,18 +285,38 @@
 }
 
 @media (max-width:1000px) {
-    html{
+    html {
         scroll-behavior: smooth;
     }
-    body{
+
+    body {
         display: block;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         font-family: Arial;
         background-color: #f4f0e8;
+        overflow-x: hidden;
     }
-    nav{
-        width:100%;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        outline: 1.5px solid #0e0f0f;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0e0f0f;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #475454;
+    }
+
+    nav {
+        width: 100%;
         background-color: #f4f0e8;
         border-bottom: 1.5px solid #0e0f0f;
         overflow: hidden;
@@ -239,14 +324,16 @@
         z-index: 50;
         top: 0;
     }
-    ul{
+
+    ul {
         padding: 0;
         margin: 0;
         list-style: none;
     }
+
     #menuButton {
         padding: 15px;
-        width:100%;
+        width: 100%;
         font-size: 14px;
         font-family: Montserrat;
         font-weight: 600;
@@ -258,27 +345,33 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
+
     #menuButton:hover {
         background-color: #a4cfd9;
     }
+
     #menuButton.clicked {
         background-color: #0e0f0f;
         color: #f4f0e8;
     }
-    li{
+
+    li {
         background-color: #f4f0e8;
         transition: all 0.2s ease-in-out;
     }
+
     .listContainer {
         width: calc(100% - 30px);
     }
-    .listContainer > ul{
+
+    .listContainer>ul {
         width: 100%;
     }
-    .listContainer > ul > li {
+
+    .listContainer>ul>li {
         float: left;
         margin: 7.5px 0;
-        width:100%;
+        width: 100%;
         padding: 15px;
         font-size: 14px;
         font-family: Montserrat;
@@ -292,19 +385,23 @@
         outline: 1.5px solid #0e0f0f;
         transition: all 0.2s ease-in-out;
     }
-    .listContainer > ul > li:hover {
+
+    .listContainer>ul>li:hover {
         box-shadow: 4px 4px 0 1px #0e0f0f;
     }
-    p > a{
+
+    p>a {
         background: #a4cfd9;
-        color:#0e0f0f;
+        color: #0e0f0f;
         text-decoration: none;
     }
-    p > a:hover {
+
+    p>a:hover {
         background: #85a2aa;
         transition: all 0.2s ease-in-out;
     }
-    .navlink{
+
+    .navlink {
         padding: 15px;
         font-size: 14px;
         font-family: Montserrat;
@@ -314,39 +411,49 @@
         color: #0e0f0f;
         background-color: #f4f0e8;
         font-weight: bold;
-        display:block;
+        display: block;
         transition: all 0.2s ease-in-out;
     }
+
     .navlink.highlighted {
         background-color: #a4cfd9;
     }
+
     .navlink:hover {
         background-color: #a4cfd9;
     }
-    #column1{
+
+    #column1 {
         width: 100%;
     }
+
     .section {
         width: 100%;
         border-right: 1.5px solid #0e0f0f;
     }
-    #section0{
+
+    #section0 {
         display: inline-block;
     }
-    #section1{
+
+    #section1 {
         display: inline-block;
     }
-    #section2{
+
+    #section2 {
         display: inline-block;
     }
-    #section3{
+
+    #section3 {
         display: inline-block;
     }
-    .sectionHeader{
+
+    .sectionHeader {
         margin-top: 70px;
         border-bottom: 1.5px solid #0e0f0f;
     }
-    h1{
+
+    h1 {
         text-indent: 40px;
         font-family: Montserrat;
         font-weight: 600;
@@ -354,7 +461,8 @@
         text-align: left;
         padding: 0;
     }
-    h2{
+
+    h2 {
         font-family: Montserrat;
         font-weight: 600;
         color: #000;
@@ -363,13 +471,15 @@
         margin-top: 0px;
         margin-bottom: 20px;
     }
-    .maintext{
+
+    .maintext {
         margin-left: 30px;
         padding: 15px 30px;
         border-left: 1.5px solid #0e0f0f;
         border-bottom: 1.5px solid #0e0f0f;
     }
-    p{
+
+    p {
         font-family: Montserrat;
         font-weight: 500;
         font-size: 18px;
@@ -379,10 +489,12 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    mark{
+
+    mark {
         background: #ffd580;
     }
-    .smallText{
+
+    .smallText {
         font-family: Montserrat;
         font-weight: 500;
         font-size: 16px;
@@ -391,9 +503,11 @@
         padding-left: 15px;
         border-left: 1.5px solid #0e0f0f;
     }
-    .smallText > mark {
+
+    .smallText>mark {
         background: #f9c6cb;
     }
+
     #popupContainer {
         width: 100%;
         height: 100%;
@@ -401,6 +515,7 @@
         left: 0;
         top: 0;
     }
+
     .popup {
         background-color: #ffd580;
         position: absolute;
@@ -413,22 +528,38 @@
         box-shadow: 8px 8px 0 1px #0e0f0f;
         display: grid;
         grid:
-            "popupHeader" auto
-            "popupMain" 1fr;
+            "popupHeader" auto "popupMain" 1fr;
         z-index: 40;
         transition: all 0.7s ease-in-out;
     }
+
     .popup.hidden {
         z-index: 0;
         box-shadow: none;
     }
+
     .popupHeader {
         display: flex;
         justify-content: space-between;
     }
+
+    .popupMain {
+        overflow-y: auto;
+    }
+
+    .popupMain>p {
+        margin-right: 15px;
+    }
+
+    .popupMain>img {
+        width: 80%;
+        margin-left: calc(10% - 15px);
+    }
+
     .exitIcon {
         margin-left: 20px;
     }
+
     .exitIcon:hover {
         filter: invert(100%);
         background-color: #fff;
