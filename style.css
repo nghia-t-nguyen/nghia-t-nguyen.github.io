@@ -278,6 +278,18 @@
         margin-left: calc(20% - 15px);
     }
 
+
+    iframe {
+        position: relative;
+        width: calc(calc(100vw - 625px) * 0.48);
+        /*column2 size * 0.8 (popup container) * 0.6 (scale compared to container)*/
+        height: calc(calc(100vw - 625px) * 0.27);
+        /*width * 0.5625 (=9/16) for aspect ratio */
+        margin-left: calc(20% - 15px);
+        /*center*/
+        border: 1.5px solid #0e0f0f;
+    }
+
     .exitIcon {
         margin-left: 20px;
     }
@@ -565,6 +577,17 @@
     .popupMain>img {
         width: 80%;
         margin-left: calc(10% - 15px);
+    }
+
+    iframe {
+        width: calc(calc(80vw - 15px) * 0.8);
+        /*width of container * 0.8*/
+        height: calc(calc(80vw - 15px) * 0.45);
+        /*width * 0.5625 (=9/16) for aspect ratio*/
+        margin-left: calc(10% - 15px);
+        /*center*/
+        border: 1.5px solid #0e0f0f;
+
     }
 
     .exitIcon {
